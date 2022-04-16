@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Navbar(props) {
+export default function Navbar(props) {
     return <div className="flex items-center justify-center gap-x-4 bg-gray-700 p-2 fixed top-0 left-0 right-0 z-50">
         <div className={"text-white p-2 " + (props.selection === 'HOME' ? "bg-gray-900 rounded-md" : "")}>
             <Link href="/">
